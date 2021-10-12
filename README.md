@@ -25,6 +25,7 @@ Tenha uma boa sorte! Qualquer dúvida nos comunique.
 
 <br/>
 <br/>
+
 ## 🔖 Layout
 
 O Layout da aplicação está disponível no Figma, para acessar [clique aqui](https://www.figma.com/file/CT3q5hkUAnIAchTDWStlm0/Untitled?node-id=0%3A1).
