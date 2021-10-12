@@ -25,7 +25,6 @@ Tenha uma boa sorte! Qualquer dúvida nos comunique.
 
 <br/>
 <br/>
----
 ## 🔖 Layout
 
 O Layout da aplicação está disponível no Figma, para acessar [clique aqui](https://www.figma.com/file/CT3q5hkUAnIAchTDWStlm0/Untitled?node-id=0%3A1).
@@ -144,5 +143,5 @@ Será considerado um diferencial se você fizer tratamentos de erros, falhas de 
 <br />
 
 <h4 align="center"> 
-    Feito com amor por ♥ by Everton Ferreira e Taynan Ferreira
+    Feito com ♥ por Everton Ferreira e Taynan Ferreira
 </h4>
