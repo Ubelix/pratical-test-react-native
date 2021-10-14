@@ -24,33 +24,45 @@ Tenha uma boa sorte! Qualquer dúvida nos comunique.
 - Lembre-se, procure não gastar mais do que 4 horas para finalizar o teste.
 
 <br/>
-<br/>
 
-## 🔖 Layout
+# 🔖 Layout
 
-O Layout da aplicação está disponível no Figma, para acessar [clique aqui](https://www.figma.com/file/CT3q5hkUAnIAchTDWStlm0/Untitled?node-id=0%3A1).
+O Layout da aplicação está disponível no Figma, o projeto está disponível no [link](https://www.figma.com/file/0guw67U3KwxQiY1zMzIPHX/Bookshelf?node-id=641%3A2313), e o protótipo no [link](https://www.figma.com/proto/0guw67U3KwxQiY1zMzIPHX/Bookshelf?node-id=641%3A2313&scaling=scale-down&page-id=41%3A530&starting-point-node-id=641%3A23131).
 
-<br/>
-<hr />
 <br/>
 
 # Avaliação Prática
 
 ### Contexto:
 
-_A aplicação possui por finalidade, através de três interfaces simples, a listagem livros disponíveis de acordo com o gênero, podendo pesquisar pelo título e autor_
+<br/>
+<br/>
+
+- _A aplicação possui por finalidade, através de três interfaces simples, a listagem livros disponíveis de acordo com o gênero, podendo pesquisar pelo título e autor_
+
+<br/>
+<br/>
 
 _INFORMAÇÕES ADICIONAIS_: As resposta das requisições estão no formato JSON.
-
-**1 - A Interface de Dashboard:.** Listagem de todos os gêneros disponíveis obtidos através da API da NyTimes. Informações da API, [clique aqui](https://developer.nytimes.com/docs/books-product/1/overview).
+<br/>
+<br/>
+**1 - A Interface de Dashboard:.** Listagem de todos os gêneros disponíveis obtidos através da API da NyTimes. Informações da API no [link](https://developer.nytimes.com/docs/books-product/1/overview).
+<br/>
+<br/>
 
 API:
 
     https://api.nytimes.com
 
-ROTA:
+ROTAS:
 
-    https://api.nytimes.com/svc/books/v3/lists/names.json
+- Categorias de Livros
+
+        https://api.nytimes.com/svc/books/v3/lists/names.json
+
+- As coleções de livros 'Para você' e 'Os mais lidos da semana'
+
+        https://api.nytimes.com/svc/books/v3/lists/overview.json
 
 PARAMETROS:
 
@@ -58,11 +70,21 @@ PARAMETROS:
 
         api-key=vi0bsV0yOCA9qYnmAaOUJV4dO0BNhUGR
 
-CURL - Exemplo
+CURL:
 
     curl -X GET https://api.nytimes.com/svc/books/v3/lists/names.json\?api-key\=vi0bsV0yOCA9qYnmAaOUJV4dO0BNhUGR
 
-_INFORMAÇÕES ADICIONAIS_: Através da resposta obtida da API, renderizar cada um dos gêneros utilizando o "display_name" como nome do gênero e será necessário a informação do campo "list_name_encoded" para realizar a requisição na próxima interface, lembre-se cada um dos componentes se acionados será redirecionado para a próxima interface, onde será realizado a seleção dos livros de acordo com o gênero.
+_INFORMAÇÕES ADICIONAIS_:
+<br />
+
+- Através da resposta obtida da API, renderizar cada um dos gêneros utilizando o "display_name" como nome do gênero e será necessário a informação do campo "list_name_encoded" para realizar a requisição na próxima interface, lembre-se cada um dos componentes se acionados será redirecionado para a próxima interface, onde será realizado a seleção dos livros de acordo com o gênero.
+
+- A classificação das estrelas podem ser classificadas fixadas em 5 ou aleatórias.
+
+- A Pesquisar deve ser realizada através dos campos:
+
+        "author": String,
+        "title": String,
 
 <br/>
 <hr/>
@@ -70,14 +92,13 @@ _INFORMAÇÕES ADICIONAIS_: Através da resposta obtida da API, renderizar cada 
 
 **2 - Agora você deve criar uma interface com a lista de livros retornados de acordo com o gênero selecionado na primeira interface, mostrando a imagem da capa do livro, título, autor, preço e o nome da editora.**
 
+<br />
+
 A Listagem de todos os livros disponíveis obtidos através da API da NyTime de acordo com o gênero previamente escolido, [clique aqui](https://developer.nytimes.com/docs/books-product/1/overview).
 
+<br />
+
 _INFORMAÇÕES ADICIONAIS_:
-
-- A Pesquisar deve ser realizada através dos campos:
-
-        "author": String,
-        "title": String,
 
 - Utilize os campos do retorno da resposta da requisição:
 
@@ -107,11 +128,17 @@ PARAMETROS:
 
         api-key=vi0bsV0yOCA9qYnmAaOUJV4dO0BNhUGR
 
+<br />
+
 CURL - Exemplo
 
     curl -X GET https://api.nytimes.com/svc/books/v3/lists/current/combined-print-and-e-book-fiction.json\?api-key\=vi0bsV0yOCA9qYnmAaOUJV4dO0BNhUGR
 
+<br />
+
 **3 - Agora você deve criar uma interface com as informações do livro de acordo com o livro selecionado na segunda interface, mostrando a imagem da capa do livro, título, autor, preço, descrição e o nome da editora.**
+
+<br />
 
 A Listagem de todos os livros disponíveis obtidos através da API da NyTime de acordo com o gênero previamente escolido, [clique aqui](https://developer.nytimes.com/docs/books-product/1/overview).
 
@@ -126,9 +153,19 @@ _INFORMAÇÕES ADICIONAIS_:
         "price": String,
         "book_image": String,
 
+- A classificação das estrelas podem ser classificadas fixadas em 5 ou aleatórias.
+- As avaliaçxões podem ser fixadas em 36 avaliações ou aleatórias.
+
+<br />
+
 **_EXTRA_**
+<br />
+<br />
 
 Será considerado um diferencial se você fizer tratamentos de erros, falhas de rede e indicadores de carregamento para melhorar a usabilidade do usuário.
+
+<br />
+<br />
 
 # 🛠 Time
 
