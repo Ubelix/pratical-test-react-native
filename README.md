@@ -15,13 +15,11 @@ Tenha uma boa sorte! Qualquer dúvida nos comunique.
 # GitHub
 
 - Realize um _fork_ do projeto no GitHub.
-- Adicione @ubelix como um colaborador do seu _fork_.
-  <br>
-  _Você pode facilmente fazer isso em https://github.com/`seu-usuario`/react-native-test/settings/collaboration._
 - Ao iniciar a valiação, faça um _commit_ vazio com a mensagem `release: init app` e quando finalizar, faça um _commit_ com a mensagem `release: finish app`.
 - Faça vários _commits_ com o objetivo de demonstrar a construção da solução
 - Não use _branches_.
 - Lembre-se, procure não gastar mais do que 4 horas para finalizar o teste.
+- Ao finalizar, suba o projeto em um repositório público e envie o link do repositório por e-mail. É fundamental que ele esteja público.
 
 <br/>
 
