@@ -4,10 +4,10 @@ _A Avaliação Prática, possui por finalidade análisar as suas competências t
 
 # Instruções
 
-- A aplicação deve ser contruída utilzando React Native, podendo ser utilizado _Bare Workflow_ ou _Managed Workflow_.
+- A aplicação deve ser contruída utilzando React Native, podendo ser utilizado o Expo _Bare Workflow_ ou _Managed Workflow_.
 - Tempo para a realização da atividade - 04 Horas.
 - Procure utiizar as **boas práticas** de desenvolvimento e **componentização**.
-- Não é necessário concluir a atividade por completa, estamos interessados em
+- Não é necessário concluir a atividade por completa, estamos interessados em entender sua visão estrutural e lógica.
 - Procure seguir as interfaces, cores e ícones. Porém não é obrigatório, diferente da estrutura que é obrigatória.
 
 Tenha uma boa sorte! Qualquer dúvida nos comunique.
@@ -33,7 +33,6 @@ O Layout da aplicação está disponível no Figma, o projeto está disponível 
 
 ### Contexto:
 
-<br/>
 <br/>
 
 - _A aplicação possui por finalidade, através de três interfaces simples, a listagem livros disponíveis de acordo com o gênero, podendo pesquisar pelo título e autor_
@@ -152,7 +151,7 @@ _INFORMAÇÕES ADICIONAIS_:
         "book_image": String,
 
 - A classificação das estrelas podem ser classificadas fixadas em 5 ou aleatórias.
-- As avaliaçxões podem ser fixadas em 36 avaliações ou aleatórias.
+- As avaliações podem ser fixadas em 36 avaliações ou aleatórias.
 
 <br />
 
